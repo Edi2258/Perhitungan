@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Perhitungan</string>
+    <string name="app_dk">Aplikasi menggitung luas persegi panjang atau perkalian</string>
+    <string name="Panjang_bangunan">panjang (cm)</string>
+    <string name="Lebar_bangunan">lebar (cm)</string>
+    <string name="Hitung">hasil</string>
+    <string name="panjang_invalid">Tidak boleh kosong</string>
+    <string name="lebar_invalid">Tidak boleh kosong</string>
+    <string name="hasil">Hasil</string>
+</resources>

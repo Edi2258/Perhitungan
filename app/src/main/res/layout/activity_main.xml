@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily=""
+            android:text="@string/app_dk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/panjang_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/panjang_inp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Panjang_bangunan" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lebar_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/panjang_hint">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lebar_inp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Lebar_bangunan" />
+
+            <Button
+                android:id="@+id/button_hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/actor"
+                android:text="@string/Hitung"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/hasilaja"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:text="@string/hasil" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
